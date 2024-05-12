@@ -1,30 +1,45 @@
-# React + TypeScript + Vite
+# Bookmark Extension
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a browser extension that allows users to save and manage bookmarks for the current webpage they're visiting. It provides a simple and convenient way to bookmark important pages and access them later.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add bookmarks for the current webpage
+- View and manage existing bookmarks
+- Delete bookmarks
+- Bookmarks are synced across different browser sessions
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone or download this repository to your local machine.
+2. Open your browser and navigate to the extensions page (e.g., `chrome://extensions/` for Google Chrome or `about:addons` for Mozilla Firefox).
+3. Enable the "Developer mode" option if it's not already enabled.
+4. Click the "Load unpacked" button (Chrome) or "Install add-on from file" (Firefox) and select the folder containing the extension files.
+5. The Bookmark Extension should now be installed and ready to use.
 
-- Configure the top-level `parserOptions` property like this:
+## Usage
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. Open the webpage you want to bookmark.
+2. Click the Bookmark Extension icon in your browser's toolbar.
+3. In the extension popup, enter a name or description for your bookmark in the input field.
+4. Click the "Add Bookmark" button to save the bookmark for the current page.
+5. To view or manage your bookmarks, click the "View Bookmarks" button.
+6. You can delete individual bookmarks by clicking the "Delete" button next to each bookmark entry.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Development
+
+If you want to modify or contribute to the extension, follow these steps:
+
+1. Clone or download the repository to your local machine.
+2. Install the required dependencies by running `npm install` or `yarn install` in the project directory.
+3. Make your desired changes to the source code.
+4. Build the extension by running `npm run build` or `yarn build`.
+5. Follow the installation steps above to load the updated extension in your browser.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
