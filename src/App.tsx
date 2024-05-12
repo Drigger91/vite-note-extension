@@ -17,7 +17,6 @@ function App() {
     getBookmarks();
   }, []);
 
-  // Listen for changes in Chrome storage and update bookmarks
   useEffect(() => {
     const handleStorageChange = (changes: { [key: string]: chrome.storage.StorageChange }) => {
       if (changes.bookmarks && changes.bookmarks.newValue) {
